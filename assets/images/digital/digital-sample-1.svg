@@ -1,0 +1,14 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="digitalGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#4c1f2b" offset="0%" />
+      <stop stop-color="#2c3a64" offset="50%" />
+      <stop stop-color="#214333" offset="100%" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="32" fill="url(#digitalGlow)" />
+  <circle cx="220" cy="200" r="120" fill="#d7b15a" opacity="0.5" />
+  <circle cx="400" cy="280" r="140" fill="#f8f1e3" opacity="0.35" />
+  <path d="M100 140c80 120 360 120 440 0" fill="none" stroke="#f8f1e3" stroke-width="10" stroke-linecap="round" />
+  <path d="M80 320c90-60 390-60 480 0" fill="none" stroke="#d7b15a" stroke-width="6" stroke-dasharray="30 18" />
+</svg>

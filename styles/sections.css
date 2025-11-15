@@ -1,0 +1,129 @@
+.hero__frame,
+.gallery-card,
+.process__media,
+.service-card,
+.contact-form,
+.footer__gallery img {
+  transition: transform var(--duration-base) var(--easing-soft), box-shadow var(--duration-base) var(--easing-soft), opacity var(--duration-base) var(--easing-soft);
+}
+
+.section[data-reveal="hidden"] {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.section[data-reveal="visible"] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--duration-base) var(--easing-soft), transform var(--duration-base) var(--easing-soft);
+}
+
+.gallery-card:hover,
+.gallery-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.service-card:hover,
+.service-card:focus-within {
+  transform: translateY(-4px);
+}
+
+.footer__gallery img:hover,
+.footer__gallery img:focus {
+  transform: translateY(-6px) rotate(-2deg);
+}
+
+.services {
+  position: relative;
+}
+
+.services::before,
+.services::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: min(800px, 90%);
+  height: 60px;
+  transform: translateX(-50%);
+  opacity: 0.5;
+  background: url('../assets/patterns/folk-border.svg') center/cover no-repeat;
+}
+
+.services::before {
+  top: 0;
+}
+
+.services::after {
+  bottom: 0;
+  transform: translateX(-50%) scaleY(-1);
+}
+
+.lightbox[hidden] {
+  display: none;
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 5, 10, 0.8);
+}
+
+.lightbox__panel {
+  position: relative;
+  margin: 4rem auto;
+  max-width: 900px;
+  background: var(--color-cream);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.lightbox__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  color: var(--color-ink-burgundy);
+  cursor: pointer;
+}
+
+.lightbox__media img {
+  width: 100%;
+  border-radius: var(--border-radius-egg);
+}
+
+.form-status {
+  min-height: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.form-status.is-success {
+  color: #a9f0c3;
+}
+
+.form-status.is-error {
+  color: #f4a8a8;
+}
+
+.gallery-card[data-hidden="true"] {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .services::before,
+  .services::after {
+    display: none;
+  }
+}

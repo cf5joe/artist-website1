@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Artist Name | Folkloric Portfolio (Placeholder)</title>
+    <meta name="description" content="Placeholder immersive site for Artist Name – pysanky eggs, portraits, cards, and digital art." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400;600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/tokens.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/sections.css" />
+  </head>
+  <body>
+    <div class="background-texture" aria-hidden="true"></div>
+    <nav class="floating-nav" aria-label="Section navigation">
+      <button class="floating-nav__dot is-active" data-target="#hero">Intro</button>
+      <button class="floating-nav__dot" data-target="#about">About</button>
+      <button class="floating-nav__dot" data-target="#gallery">Gallery</button>
+      <button class="floating-nav__dot" data-target="#process">Process</button>
+      <button class="floating-nav__dot" data-target="#services">Services</button>
+      <button class="floating-nav__dot" data-target="#contact">Contact</button>
+    </nav>
+
+    <header id="hero" class="section hero" data-section>
+      <div class="hero__frame">
+        <div class="hero__glow"></div>
+        <div class="hero__content">
+          <p class="section-label">Placeholder studio</p>
+          <h1>Artist Name</h1>
+          <p class="hero__tagline">Pysanky, portraits, cards & digital stories</p>
+          <div class="hero__cta-group">
+            <a class="btn" href="#gallery">View the work</a>
+            <button class="ghost-link" data-target="#about">Meet the artist →</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__motifs" aria-hidden="true">
+        <img src="assets/icons/egg-outline.svg" alt="" />
+        <img src="assets/icons/egg-outline.svg" alt="" />
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-indicator__bar"></div>
+      </div>
+    </header>
+
+    <section id="about" class="section about" data-section>
+      <div class="about__media">
+        <div class="about__frame">
+          <img src="assets/images/portraits/portrait-sample-1.svg" alt="Placeholder portrait of Artist Name" />
+          <span class="about__caption">Placeholder portrait illustration</span>
+        </div>
+      </div>
+      <div class="about__copy">
+        <p class="section-label">Story spread</p>
+        <h2>Holding stories inside luminous shells</h2>
+        <p>
+          This placeholder biography celebrates a multi-disciplinary artist weaving Ukrainian pysanky patterns, intimate portraits, bespoke cards, and digital illustrations. Each piece is imagined as a keepsake filled with warmth and ornamented storytelling.
+        </p>
+        <p>
+          The final copy will highlight the artist’s heritage, process, and the joy of collaborating on commissions that feel tailor-made for every celebration.
+        </p>
+        <button class="ghost-link" data-target="#gallery">Scroll to favorites →</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery" data-section>
+      <div class="section-heading">
+        <p class="section-label">Signature works (placeholders)</p>
+        <h2>Preview the collection</h2>
+      </div>
+      <div class="gallery__filters" role="tablist" aria-label="Filter gallery">
+        <button class="filter-pill is-active" data-filter="all" role="tab">All</button>
+        <button class="filter-pill" data-filter="pysanky" role="tab">Pysanky</button>
+        <button class="filter-pill" data-filter="portraits" role="tab">Portraits & Cards</button>
+        <button class="filter-pill" data-filter="digital" role="tab">Digital Art</button>
+      </div>
+      <div class="gallery__grid">
+        <article class="gallery-card" data-category="pysanky">
+          <div class="gallery-card__media">
+            <img src="assets/images/pysanky/egg-sample-1.svg" alt="Placeholder pysanky egg design #1" />
+            <span class="gallery-card__tag">Pysanky Study #1</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Placeholder write-up celebrating layered wax lines and luminous dyes.</p>
+            <button class="ghost-link" data-lightbox="egg-sample-1">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="pysanky">
+          <div class="gallery-card__media">
+            <img src="assets/images/pysanky/egg-sample-2.svg" alt="Placeholder pysanky egg design #2" />
+            <span class="gallery-card__tag">Pysanky Study #2</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Geometric placeholder motifs referencing protective symbols.</p>
+            <button class="ghost-link" data-lightbox="egg-sample-2">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="pysanky">
+          <div class="gallery-card__media">
+            <img src="assets/images/pysanky/egg-sample-3.svg" alt="Placeholder pysanky egg design #3" />
+            <span class="gallery-card__tag">Pysanky Study #3</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Placeholder florals and sun motifs layered over glowing gradients.</p>
+            <button class="ghost-link" data-lightbox="egg-sample-3">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="portraits">
+          <div class="gallery-card__media">
+            <img src="assets/images/portraits/portrait-sample-1.svg" alt="Placeholder portrait illustration #1" />
+            <span class="gallery-card__tag">Portrait Study #1</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Warm illustrated portrait referencing analog gouache textures.</p>
+            <button class="ghost-link" data-lightbox="portrait-sample-1">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="portraits">
+          <div class="gallery-card__media">
+            <img src="assets/images/portraits/portrait-sample-2.svg" alt="Placeholder portrait illustration #2" />
+            <span class="gallery-card__tag">Portrait Study #2</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Placeholder card art celebrating ceremonial dress silhouettes.</p>
+            <button class="ghost-link" data-lightbox="portrait-sample-2">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="portraits">
+          <div class="gallery-card__media">
+            <img src="assets/images/portraits/portrait-sample-3.svg" alt="Placeholder portrait illustration #3" />
+            <span class="gallery-card__tag">Portrait Study #3</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Placeholder greeting card cover featuring stylized botanicals.</p>
+            <button class="ghost-link" data-lightbox="portrait-sample-3">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="digital">
+          <div class="gallery-card__media">
+            <img src="assets/images/digital/digital-sample-1.svg" alt="Placeholder digital art #1" />
+            <span class="gallery-card__tag">Digital Concept #1</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Abstract light study exploring egg-shaped glows.</p>
+            <button class="ghost-link" data-lightbox="digital-sample-1">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="digital">
+          <div class="gallery-card__media">
+            <img src="assets/images/digital/digital-sample-2.svg" alt="Placeholder digital art #2" />
+            <span class="gallery-card__tag">Digital Concept #2</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Placeholder UI scene referencing card layouts and lighting.</p>
+            <button class="ghost-link" data-lightbox="digital-sample-2">View details</button>
+          </div>
+        </article>
+        <article class="gallery-card" data-category="digital">
+          <div class="gallery-card__media">
+            <img src="assets/images/digital/digital-sample-3.svg" alt="Placeholder digital art #3" />
+            <span class="gallery-card__tag">Digital Concept #3</span>
+          </div>
+          <div class="gallery-card__body">
+            <p>Radiant gradient illustration referencing neon embroidery.</p>
+            <button class="ghost-link" data-lightbox="digital-sample-3">View details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section process" data-section>
+      <div class="section-heading">
+        <p class="section-label">How the magic happens</p>
+        <h2>Placeholder process map</h2>
+      </div>
+      <div class="process__grid">
+        <ol class="process__timeline">
+          <li>
+            <div class="timeline-icon">
+              <img src="assets/icons/egg-outline.svg" alt="" />
+            </div>
+            <h3>Step 1 · Sketching</h3>
+            <p>Loose pencil studies and digital thumbnails to outline motifs.</p>
+          </li>
+          <li>
+            <div class="timeline-icon">
+              <img src="assets/icons/brush.svg" alt="" />
+            </div>
+            <h3>Step 2 · Wax & Dye</h3>
+            <p>Placeholder description of wax-resist layers and dye baths.</p>
+          </li>
+          <li>
+            <div class="timeline-icon">
+              <img src="assets/icons/egg-outline.svg" alt="" />
+            </div>
+            <h3>Step 3 · Detailing</h3>
+            <p>Gold leaf accents, line work, and digital refinements.</p>
+          </li>
+          <li>
+            <div class="timeline-icon">
+              <img src="assets/icons/egg-outline.svg" alt="" />
+            </div>
+            <h3>Step 4 · Delivery</h3>
+            <p>Packaging concept, digital exports, and keepsake care tips.</p>
+          </li>
+        </ol>
+        <div class="process__media">
+          <div class="video-poster" role="img" aria-label="Placeholder video poster for process clip">
+            <div class="video-poster__badge">Process preview</div>
+            <p>Mock video embed will live here for future footage.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services" data-section>
+      <div class="section-heading">
+        <p class="section-label">Custom commissions</p>
+        <h2>Placeholder services & ranges</h2>
+      </div>
+      <div class="services__grid">
+        <article class="service-card">
+          <h3>Custom Pysanky Eggs</h3>
+          <p class="service-card__price">Starting at $XXX</p>
+          <p>Create seasonal collections or singular heirlooms with placeholder patterns.</p>
+        </article>
+        <article class="service-card">
+          <h3>Portraits & Cards</h3>
+          <p class="service-card__price">Starting at $XXX</p>
+          <p>Watercolor-inspired portraits and greeting cards tailored to each story.</p>
+        </article>
+        <article class="service-card">
+          <h3>Digital Illustrations</h3>
+          <p class="service-card__price">Starting at $XXX</p>
+          <p>Bold, illuminated panels perfect for covers, merch, or editorial features.</p>
+        </article>
+        <article class="service-card">
+          <h3>Workshops & Kits</h3>
+          <p class="service-card__price">Starting at $XXX</p>
+          <p>Placeholder description for virtual demos and take-home craft kits.</p>
+        </article>
+      </div>
+      <div class="services__cta">
+        <a class="btn" href="#contact">Request a commission</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact" data-section>
+      <div class="section-heading">
+        <p class="section-label">Commission request</p>
+        <h2>Tell me about your idea</h2>
+      </div>
+      <form class="contact-form" aria-label="Placeholder commission form">
+        <div class="form-row">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your full name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Project type
+            <select name="project" required>
+              <option value="">Choose a project</option>
+              <option>Pysanky egg</option>
+              <option>Portrait</option>
+              <option>Card set</option>
+              <option>Digital illustration</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Budget range (USD)
+            <select name="budget">
+              <option value="">Select a range</option>
+              <option>$150 – $300</option>
+              <option>$300 – $600</option>
+              <option>$600 – $1k</option>
+              <option>$1k+</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-row">
+          <label>
+            Timeline
+            <input type="text" name="timeline" placeholder="e.g., Needed by May 15" />
+          </label>
+          <label>
+            Inspiration link
+            <input type="url" name="reference" placeholder="https://example.com/board" />
+          </label>
+        </div>
+        <label>
+          Idea details
+          <textarea name="details" rows="5" placeholder="Share colors, motifs, story beats..." required></textarea>
+        </label>
+        <button type="submit" class="btn">Send placeholder request</button>
+        <p class="form-disclaimer">This form currently routes to a placeholder handler and will be updated with final email/service details later.</p>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <footer class="footer" data-section>
+      <div class="footer__top">
+        <div>
+          <p class="section-label">Stay connected</p>
+          <h2>Placeholder social icons</h2>
+        </div>
+        <div class="social-links">
+          <a href="https://instagram.com/placeholder" target="_blank" rel="noreferrer" aria-label="Instagram placeholder">
+            <span>@artist_handle</span>
+          </a>
+          <a href="https://tiktok.com/@placeholder" target="_blank" rel="noreferrer" aria-label="TikTok placeholder">
+            <span>@artist_tiktok</span>
+          </a>
+          <a href="https://shop.example.com" target="_blank" rel="noreferrer" aria-label="Shop placeholder">
+            <span>shop.example.com</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__gallery" aria-label="Placeholder mini gallery">
+        <img src="assets/images/pysanky/egg-sample-1.svg" alt="Mini placeholder egg 1" />
+        <img src="assets/images/pysanky/egg-sample-2.svg" alt="Mini placeholder egg 2" />
+        <img src="assets/images/pysanky/egg-sample-3.svg" alt="Mini placeholder egg 3" />
+      </div>
+      <p class="footer__note">© 2025 Artist Name · Placeholder signature mark</p>
+    </footer>
+
+    <div class="lightbox" data-lightbox-root hidden>
+      <div class="lightbox__backdrop" data-lightbox-close></div>
+      <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Artwork details">
+        <button class="lightbox__close" data-lightbox-close aria-label="Close dialog">×</button>
+        <div class="lightbox__media">
+          <img src="" alt="" />
+        </div>
+        <div class="lightbox__copy">
+          <p class="section-label">Placeholder detail</p>
+          <h3>Title</h3>
+          <p class="lightbox__description"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>

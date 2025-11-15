@@ -1,0 +1,16 @@
+<svg width="360" height="480" viewBox="0 0 360 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eggBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop stop-color="#682a3f" offset="0%" />
+      <stop stop-color="#2f1a2f" offset="100%" />
+    </linearGradient>
+    <pattern id="folkCross" width="60" height="60" patternUnits="userSpaceOnUse">
+      <rect width="60" height="60" fill="none" />
+      <path d="M30 10v40M10 30h40" stroke="#f8f1e3" stroke-width="6" stroke-linecap="round" />
+      <circle cx="30" cy="30" r="6" fill="#d7b15a" />
+    </pattern>
+  </defs>
+  <path d="M180 20c-84 0-152 120-152 240s68 200 152 200 152-80 152-200S264 20 180 20z" fill="url(#eggBase)" stroke="#d7b15a" stroke-width="8" />
+  <path d="M60 240h240M180 120v240" stroke="#f8f1e3" stroke-width="8" />
+  <path d="M80 240c40-60 160-60 200 0-40 60-160 60-200 0z" fill="url(#folkCross)" opacity="0.8" />
+</svg>

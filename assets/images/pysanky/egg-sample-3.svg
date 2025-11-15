@@ -1,0 +1,19 @@
+<svg width="360" height="480" viewBox="0 0 360 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="eggBase3" cx="50%" cy="40%" r="70%">
+      <stop stop-color="#f8f1e3" offset="0%" />
+      <stop stop-color="#d7b15a" offset="60%" />
+      <stop stop-color="#9a4b3d" offset="100%" />
+    </radialGradient>
+  </defs>
+  <path d="M180 40c-70 0-140 110-140 210s70 190 140 190 140-90 140-190S250 40 180 40z" fill="url(#eggBase3)" stroke="#4c1f2b" stroke-width="8" />
+  <g stroke="#4c1f2b" stroke-width="4">
+    <path d="M60 230h240" />
+    <path d="M120 90l60 140 60-140" fill="none" />
+    <path d="M120 370l60-140 60 140" fill="none" />
+  </g>
+  <g fill="#4c1f2b">
+    <circle cx="180" cy="180" r="20" />
+    <circle cx="180" cy="280" r="20" />
+  </g>
+</svg>

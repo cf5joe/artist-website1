@@ -1,0 +1,46 @@
+:root {
+  /* Color tokens */
+  --color-ink-burgundy: #4c1f2b;
+  --color-fern: #214333;
+  --color-egg-gold: #d7b15a;
+  --color-cream: #f8f1e3;
+  --color-indigo: #2c3a64;
+  --color-sunset: #c55a3b;
+  --color-moss: #5d7d4b;
+  --color-rose: #b96c6b;
+  --color-midnight: #150b11;
+  --color-white: #ffffff;
+  --color-shadow: rgba(21, 11, 17, 0.2);
+
+  /* Typography tokens */
+  --font-display: 'Lora', 'Cormorant Garamond', serif;
+  --font-body: 'Source Sans 3', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-script: 'Great Vibes', 'Parisienne', cursive;
+
+  /* Sizing & spacing */
+  --max-content-width: 1100px;
+  --section-padding: clamp(3rem, 5vw, 6rem);
+  --border-radius-egg: 48% 52% 52% 48% / 60% 40% 60% 40%;
+  --border-radius-pill: 999px;
+  --gap-lg: clamp(2rem, 4vw, 4rem);
+  --gap-md: 1.5rem;
+  --gap-sm: 0.75rem;
+
+  /* Shadows & depth */
+  --shadow-soft: 0 20px 50px rgba(12, 5, 9, 0.3);
+  --shadow-glow: 0 0 40px rgba(215, 177, 90, 0.35);
+
+  /* Animation timings */
+  --duration-slow: 900ms;
+  --duration-base: 550ms;
+  --duration-fast: 250ms;
+  --easing-soft: cubic-bezier(0.35, 0.11, 0.24, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-cream: #140c0f;
+    --color-midnight: #f8f1e3;
+    --color-shadow: rgba(248, 241, 227, 0.08);
+  }
+}
