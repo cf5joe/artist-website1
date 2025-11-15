@@ -12,6 +12,36 @@ scrollButtons.forEach((btn) => {
   });
 });
 
+/** Primary nav toggle (mobile) */
+const navToggle = document.querySelector('.site-nav__toggle');
+const siteNavLinks = document.querySelector('.site-nav__links');
+if (navToggle && siteNavLinks) {
+  const closeNav = () => {
+    navToggle.setAttribute('aria-expanded', 'false');
+    siteNavLinks.classList.remove('is-open');
+  };
+
+  navToggle.addEventListener('click', () => {
+    const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+    navToggle.setAttribute('aria-expanded', (!expanded).toString());
+    siteNavLinks.classList.toggle('is-open', !expanded);
+  });
+
+  siteNavLinks.querySelectorAll('[data-target]').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (navToggle.getAttribute('aria-expanded') === 'true') {
+        closeNav();
+      }
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeNav();
+    }
+  });
+}
+
 /** Section reveal + nav state */
 const sections = document.querySelectorAll('[data-section]');
 const navDots = document.querySelectorAll('.floating-nav__dot');

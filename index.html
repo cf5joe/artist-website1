@@ -15,6 +15,21 @@
   </head>
   <body>
     <div class="background-texture" aria-hidden="true"></div>
+    <header class="site-nav">
+      <a class="site-nav__brand" href="#hero" data-target="#hero">Artist Name</a>
+      <button class="site-nav__toggle" aria-expanded="false" aria-controls="siteNavMenu">
+        <span class="site-nav__toggle-label">Menu</span>
+        <span class="site-nav__toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="site-nav__links" id="siteNavMenu" aria-label="Primary navigation">
+        <a href="#hero" data-target="#hero">Intro</a>
+        <a href="#about" data-target="#about">About</a>
+        <a href="#gallery" data-target="#gallery">Gallery</a>
+        <a href="#process" data-target="#process">Process</a>
+        <a href="#services" data-target="#services">Services</a>
+        <a href="#contact" data-target="#contact">Contact</a>
+      </nav>
+    </header>
     <nav class="floating-nav" aria-label="Section navigation">
       <button class="floating-nav__dot is-active" data-target="#hero">Intro</button>
       <button class="floating-nav__dot" data-target="#about">About</button>
@@ -24,7 +39,8 @@
       <button class="floating-nav__dot" data-target="#contact">Contact</button>
     </nav>
 
-    <header id="hero" class="section hero" data-section>
+    <main>
+      <header id="hero" class="section hero" data-section>
       <div class="hero__frame">
         <div class="hero__glow"></div>
         <div class="hero__content">
@@ -307,6 +323,8 @@
         <div class="form-status" role="status" aria-live="polite"></div>
       </form>
     </section>
+
+    </main>
 
     <footer class="footer" data-section>
       <div class="footer__top">
